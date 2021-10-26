@@ -15,6 +15,7 @@ public class Book extends Product {
         this.author = author;
     }
 
+    @Override
     public boolean matches(String text){
         return author.contains(text) || super.matches(text);
     }
